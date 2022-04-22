@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-light: #fcfcfc;
+    --clr-dark: #1b1b1b;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-orange-primary: #fb433b;
+    --clr-orange-secondary: #fc4c3c;
+    --clr-orange-third: #fc4e44;
+    --clr-dark-secondary: #3c241c;
+    --clr-coco-primary: #582424;
+    --clr-coco-secondary: #682c24;
+    --clr-coco-third: #8f312c;
+  
+    --bsd-primary :0.25em 0.25em 0.75em rgba(0, 0, 0, 0.404),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.418);
+  }
+
+
+.navbar{
+   overflow: hidden;
+   background: var(--clr-orange-third);
+   height: 70px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.logo_img{
+    display: flex;
+    width: 130px;
+}
+
+.navbar_left{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.navbar_right{
+    display: absolute;
+}
+
+.navbar_ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar_ul li{
+    margin-left:40px;
+    color: var(--clr--primary);
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+.navbar_ul li{
+    cursor: pointer;
+}
+
+.nav__links{
+    color: var(--clr-light);
+}
+.nav__links:hover{
+    color: var(--clr-dark);
+}
+
+.login_button{
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 30px !important;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle{
+    display: none;
+    height: 15px;
+    width: 15px;
+}
+
+
+@media (max-width:768px) {
+    .toggle{
+        display: block;
+        z-index: 10;
+    }
+
+    .navbar_right{
+        z-index: 5;
+        background: var(--clr-dark);
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: translate(-100%);
+        transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .navbar_ul{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 3em;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .login_button{
+        margin-left: 0 !important;
+    }
+    
+    .open{
+        transform: translate(0%);
+        
+    }
+}

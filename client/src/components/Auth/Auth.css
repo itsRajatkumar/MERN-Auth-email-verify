@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-light: #fcfcfc;
+  --clr-dark: #1b1b1b;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-orange-primary: #fb433b;
+  --clr-orange-secondary: #fc4c3c;
+  --clr-orange-third: #fc4e44;
+  --clr-dark-secondary: #3c241c;
+  --clr-coco-primary: #582424;
+  --clr-coco-secondary: #682c24;
+  --clr-coco-third: #8f312c;
+
+  --bsd-primary :0.25em 0.25em 0.75em rgba(0, 0, 0, 0.404),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.418);
+}
+
+
+.btn{
+  height: 40px;
+  width: 60%;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--clr-orange-primary);
+  color: var(--clr-light);
+  font-size: large;
+}
+
+.btn:hover{
+  border: 1px solid var(--clr-orange-primary) !important;
+  color: var(--clr-orange-primary);
+  background-color: var(--clr-light);
+  text-decoration: none;
+
+}
+
+.login{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container{
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1em;
+}
+
+.container__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__link{
+  color: var(--clr-dark);
+}
+
+.container__left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.container__left h2{
+  width: 100%;
+}
+
+.container__left form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.input__block{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--clr-orange-primary);
+}
+
+.input__block span {
+  color: var(--clr-dark);
+  width: 40px;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__block input{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  border: none;
+  letter-spacing: 2px;
+}
+.input__block input:focus,
+.input__block input:focus{
+  outline: none;
+}
+
+
+
+.pass__visible {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--clr-dark);
+  display: none;
+  cursor: pointer; 
+}
+.pass-key:valid ~ .pass__visible {
+  display: block;
+}
+
+img{
+width: 200px;
+}
+
+/* .space {
+margin-top: 16px;
+
+} */
+.show {
+position: absolute;
+right: 13px;
+font-size: 13px;
+font-weight: 700;
+color: var(--clr-dark);
+display: none;
+cursor: pointer; 
+}
+.pass-key:valid ~ .show {
+display: block;
+}
+

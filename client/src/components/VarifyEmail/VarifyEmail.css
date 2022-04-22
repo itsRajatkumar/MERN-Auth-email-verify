@@ -1,0 +1,59 @@
+:root {
+    --clr-light: #fcfcfc;
+    --clr-dark: #1b1b1b;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-orange-primary: #fb433b;
+    --clr-orange-secondary: #fc4c3c;
+    --clr-orange-third: #fc4e44;
+    --clr-dark-secondary: #3c241c;
+    --clr-coco-primary: #582424;
+    --clr-coco-secondary: #682c24;
+    --clr-coco-third: #8f312c;
+  
+    --bsd-primary :0.25em 0.25em 0.75em rgba(0, 0, 0, 0.404),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.418);
+  }
+  
+  
+.btn-large{
+    height: 40px;
+    width: 40vw;
+    padding: 0 20px;
+    border: none !important;
+    background: var(--clr-orange-primary);
+    color: var(--clr-white);
+    border-radius: 20px;
+}
+
+.btn-large:hover{
+    border: 1px solid var(--clr-orange-primary) !important;
+    color: var(--clr-orange-primary);
+    background-color: var(--clr-light);
+    text-decoration: none;
+}
+
+
+  
+
+
+.error__block{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.error__block--title h1{
+    font-size: 100px;
+}
+
+.error__block--button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
